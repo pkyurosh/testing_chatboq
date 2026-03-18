@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email Validation Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    input[type="email"]:focus {
+      border-color: #007BFF;
+    }
+
+    /* Valid email */
+    input[type="email"]:valid {
+      border-color: green;
+    }
+
+    /* Invalid email */
+    input[type="email"]:invalid {
+      border-color: red;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      background: #007BFF;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .note {
+      font-size: 12px;
+      margin-top: 10px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Email Validation</h2>
+
+  <form>
+    <input 
+      type="email" 
+      placeholder="Enter your email" 
+      required
+    >
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="note">
+    Border turns <span style="color:green;">green</span> if valid and 
+    <span style="color:red;">red</span> if invalid.
+  </div>
+</div>
+
+</body>
+</html>
